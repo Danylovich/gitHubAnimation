@@ -23,5 +23,6 @@ function drawAnimation(){
 function keyDown(){
     switch(event.keyCode){
         case 67: ctx.clearRect(0,0,cnv.width,cnv.height); r = true; break;
+        case 77: document.getElementById('href').focus(); break;
     }
 }
