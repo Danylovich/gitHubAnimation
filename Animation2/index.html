@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            background: #000;
+        }
+        #canvas{
+            background: rgb(88, 88, 243);
+            border: 2px solid white;
+        } 
+        label{
+            color: #fff;
+        }
+        form{
+            position: relative;
+            left: 0;
+            right: 0;
+            margin: auto;
+            text-align: center;
+            padding: 10px;
+            width: 400px;
+        }
+    </style>
+</head>
+<body onkeydown="keyDown()">
+    <form action="" id="f1">
+        <div>
+            <label for="">Нижня точка по X :</label>
+            <input type="Number" placeholder="Число" id="kX">
+        </div>
+        <div>
+            <label for="">Ширина знизу :</label>
+            <input type="Number" placeholder="Число" id="wB">
+        </div>
+        <div>
+            <label for="">Ширина зверху :</label>
+            <input type="Number" placeholder="Число" id="wT">
+        </div>
+        <div id="zcnv">
+            <div>
+                <label for="">Ширина канвасу :</label>
+                <input type="Number" placeholder="Число" id="wC">
+            </div>
+            <div>
+                <label for="">Довжина канвасу :</label>
+                <input type="Number" placeholder="Число" id="hC">
+            </div>
+        </div>
+        <div>
+            <label for="">Колір дороги</label>
+            <input type="color" id="color">
+        </div>
+    </form> <br>
+    <button onclick="ok()" id="ok">Ок</button> <br>
+    <canvas id="canvas" width="300" height="300"></canvas> <br>
+    <button onclick="but()" id="f2">Намалювати ще</button> <br>
+    <button onclick="c()" id="clear">Clear</button>
+    <a id="href" href="../index.html">Menu</a>
+    <script src="main.js"></script>
+</body>
+</html>
